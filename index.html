@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Theme -->
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	<!-- CSS specific for this page -->
+    <link href="css/style.css" rel="stylesheet">
+      
+    <title>Place searches</title>
+    
+    <!-- Google Places Library -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    <div id="map-canvas"></div>
+    <form name='form' onSubmit="return false;">
+	  <br><h3><b>Make Your Selections</b></h3><br>
+      <ul class="list-group" id="list">
+        <li class="list-group-item" id="zoo">zoo</li>
+        <li class="list-group-item" id="museum">museum</li>
+        <li class="list-group-item" id="restaurant">restaurant</li>
+        <li class="list-group-item" id="store">store</li>
+        <li class="list-group-item" id="library">library</li>
+        <li class="list-group-item" id="airport">airport</li>
+        <li class="list-group-item" id="gym">gym</li>
+        <li class="list-group-item" id="gasStation">gas_station</li>
+        <li class="list-group-item" id="amusementPark">amusement_park</li>
+        <li class="list-group-item" id="parking">parking</li>
+      </ul>
+      <center><input type="submit" class="btn btn-default" value="Submit" id="submit"></center>
+    </form>
+      
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <!-- Include all compiled plugins (below), or include individual files as needed -->
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+ <script src="js/script.js"></script>
+  </body>
+</html>
